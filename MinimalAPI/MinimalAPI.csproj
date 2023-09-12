@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<EnablePreviewFeatures>true</EnablePreviewFeatures>
+	<NoWarn>CA2252</NoWarn>
+    <UserSecretsId>bff32678-4208-44a1-ae5b-45789252f660</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.14.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MinimalAPI.Data\MinimalAPI.Data.csproj" />
+    <ProjectReference Include="..\MinimalAPI.Services\MinimalAPI.Services.csproj" />
+  </ItemGroup>
+
+</Project>
